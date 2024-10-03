@@ -1,0 +1,101 @@
+﻿@model IEnumerable<WebGradu.Models.Producto>
+
+@{
+    ViewData["Title"] = "Gestión de Stock";
+    var productosSinStock = ViewData["ProductosSinStock"] as List<WebGradu.Models.Producto> ?? new List<WebGradu.Models.Producto>();
+    var productosConStock = ViewData["ProductosConStock"] as List<WebGradu.Models.Producto> ?? new List<WebGradu.Models.Producto>();
+    var stockDictionary = ViewData["StockDictionary"] as Dictionary<int, WebGradu.Models.Stock> ?? new Dictionary<int, WebGradu.Models.Stock>();
+}
+
+<div class="container mt-5">
+    <center>
+        <h1>Gestión de Stock</h1>
+    </center>
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            @if (productosSinStock.Any()) // Verificar si hay productos sin stock
+            {
+                <div class="d-inline-flex align-items-center p-3" style="background-color: #f8d7da; border-radius: 5px;">
+                    <i class="fa-solid fa-square-xmark" style="color: #dd085d; font-size: 3em;"></i>
+                    <h3 class="mb-0" style="margin-left: 10px;">Sin Stock Inicial</h3>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-warning alert-dismissible fade show" role="alert" id="noStockAlert">
+                    No hay productos sin stock.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+        </div>
+        <div>
+            <form method="get" action="@Url.Action("Buscar", "Stock")" class="d-flex">
+                <input type="text" name="query" placeholder="Buscar producto..." class="form-control me-2" style="width: 200px;">
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        @foreach (var producto in productosSinStock)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card" style="min-height: 300px;">
+                    <img src="@Url.Content(producto.Foto)" class="card-img-top" alt="Imagen del producto" style="width: 100%; height: 150px; object-fit: contain;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="margin-bottom: 15px;">@producto.Nombre</h5>
+                        <p class="card-text"><strong>Código:</strong> @producto.Codigo_Producto</p>
+
+                        <!-- Formulario para ingresar stock inicial -->
+                        <form method="post" action="@Url.Action("ActualizarStock", "Stock")">
+                            <input type="hidden" name="id" value="@producto.ProductoID" />
+                            <label for="stock" class="form-label">Ingresar Stock Inicial</label>
+                            <input type="number" class="form-control" name="nuevoStock" id="stock" min="0" value="0" required style="text-align: center; width: 100px;">
+                            <button type="submit" class="btn btn-success mt-2">Actualizar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <h3 class="d-inline-flex align-items-center p-3" style="background-color: #d4edda; border-radius: 5px;">
+        <i class="fa-solid fa-chart-line" style="color: #74C0FC; font-size: 1.5em; margin-right: 10px;"></i>
+        Con Stock
+    </h3>
+
+    <div class="row">
+        @if (!productosConStock.Any())
+        {
+            <h4>No hay productos con stock.</h4>
+        }
+        else
+        {
+            foreach (var producto in productosConStock)
+            {
+                var stock = stockDictionary.ContainsKey(producto.ProductoID) ? stockDictionary[producto.ProductoID] : null;
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="min-height: 300px;">
+                        <img src="@Url.Content(producto.Foto)" class="card-img-top" alt="Imagen del producto" style="width: 100%; height: 150px; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" style="margin-bottom: 15px;">@producto.Nombre</h5>
+                            <p class="card-text"><strong>Código:</strong> @producto.Codigo_Producto</p>
+                            <p class="card-text"><strong>Stock Actual:</strong> @(stock?.StockActual ?? 0)</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<script>
+    // Ocultar la alerta después de 5 segundos
+    setTimeout(function () {
+        var alert = document.getElementById("noStockAlert");
+        if (alert) {
+            alert.style.display = "none"; // Oculta la alerta
+        }
+    }, 5000); // 5000 milisegundos = 5 segundos
+</script>
