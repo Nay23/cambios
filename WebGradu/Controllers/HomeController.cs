@@ -17,41 +17,37 @@ namespace WebGradu.Controllers
             _context = context; // Inicializa el contexto
         }
 
-        [Authorize] 
+
         public IActionResult Index()
         {
             // Verificar si el usuario está autenticado
             if (User.Identity.IsAuthenticated)
             {
-                // Obtener todos los productos con su stock actual
-                var productosConStockMinimo = _context.Stocks
-                    .Include(s => s.Producto)
-                    .Where(s => s.StockActual <= s.StockMinimo && s.StockActual > 0)
-                    .ToList();
+                // Obtener el último movimiento para cada producto
+                var ultimosMovimientos = _context.Stocks
+                    .GroupBy(s => s.Fk_Producto) // Agrupar por el identificador del producto
+                    .Select(g => g.OrderByDescending(s => s.FechaMovimiento).FirstOrDefault()) // Obtener el último movimiento de cada producto
+                    .ToList(); // Ejecutar la consulta y obtener los resultados
 
-                // Filtrar los productos que no tienen reabastecimientos posteriores
-                var productosFinales = productosConStockMinimo
-                    .Where(stock => !_context.Stocks
-                        .Where(s => s.Fk_Producto == stock.Fk_Producto)
-                        .Any(s => s.TipoMovimiento == "Reabastecimiento" && s.StockActual > stock.StockActual))
-                    .ToList();
+                // Filtrar productos que tienen stock actual menor o igual que el stock mínimo
+                var productosConStockBajo = ultimosMovimientos
+                    .Where(s => s.StockActual <= s.StockMinimo && s.StockActual > 0) // Filtrar productos con stock bajo
+                    .ToList(); // Materializar la lista de productos con stock bajo
 
                 // Si hay productos con stock bajo, establece un mensaje en TempData
-                if (productosFinales.Any())
+                if (productosConStockBajo.Any())
                 {
                     TempData["StockBajo"] = "Atención: Hay productos con bajo stock.";
                 }
 
                 // Pasar los productos finales a la vista
-                return View(productosFinales);
+                return View(productosConStockBajo);
             }
 
             // Si el usuario no está autenticado, redirigir a la vista Index del controlador Home
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Inicio", "Home");
+
         }
-
-
-
         public IActionResult Privacy()
         {
             return View();

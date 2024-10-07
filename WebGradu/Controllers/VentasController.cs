@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using WebGradu.Models;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using WebGradu.Data;
+using WebGradu.Models;
 
-
-namespace Productos.Controllers
+namespace WebGradu.Controllers
 {
     public class VentasController : Controller
     {
@@ -31,7 +31,8 @@ namespace Productos.Controllers
             if (ModelState.IsValid)
             {
                 // Asigna el UsuarioId desde el usuario autenticado
-                venta.UsuarioId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                //venta.UsuarioId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                venta.UsuarioId = User.Identity.Name;
                 venta.Fecha = DateTime.Now;
 
                 // Guardar la venta
@@ -63,7 +64,7 @@ namespace Productos.Controllers
                             var nuevoStockMovimiento = new Stock
                             {
                                 Fk_Producto = producto.ProductoID, // Relacionar con el producto
-                                StockInicial = stockAnterior.StockActual, // Asignar el stock actual del último movimiento como inicial
+                                StockInicial = stockAnterior.StockInicial, // Asignar el stock actual del último movimiento como inicial
                                 StockActual = stockAnterior.StockActual - detalle.Cantidad, // Disminuir la cantidad vendida
                                 StockMinimo = stockAnterior.StockMinimo, // Mantener el stock mínimo
                                 StockMaximo = stockAnterior.StockMaximo, // Mantener el stock máximo

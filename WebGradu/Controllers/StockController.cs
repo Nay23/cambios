@@ -4,8 +4,7 @@ using WebGradu.Models;
 using System.Linq;
 using System.Threading.Tasks;
 using CloudinaryDotNet;
-using WebGradu.Data;
-
+using WebGradu.Data; 
 
 namespace WebGradu.Controllers
 {
@@ -74,11 +73,12 @@ namespace WebGradu.Controllers
                 producto.Foto = ObtenerUrlImagen(producto.Foto); // Genera la URL segura
             }
 
-            // Obtener stock para cada producto evitando duplicados
+            // Obtener stock actual para cada producto evitando duplicados
             var stockDictionary = await _context.Stocks
                 .GroupBy(s => s.Fk_Producto) // Agrupar por ProductoID
-                .Select(g => g.OrderByDescending(s => s.StockActual).FirstOrDefault()) // Obtener el más reciente
-                .ToDictionaryAsync(s => s.Fk_Producto);
+                .Select(g => g.OrderByDescending(s => s.FechaMovimiento) // Ordenar por fecha de movimiento
+                              .FirstOrDefault()) // Obtener el más reciente
+                .ToDictionaryAsync(s => s.Fk_Producto); // Crear un diccionario
 
             // Pasar datos a la vista
             ViewData["ProductosSinStock"] = productosSinStock;
@@ -87,6 +87,7 @@ namespace WebGradu.Controllers
 
             return View();
         }
+
 
         // Método para generar la URL segura de la imagen usando el public_id
         private string ObtenerUrlImagen(string publicId)

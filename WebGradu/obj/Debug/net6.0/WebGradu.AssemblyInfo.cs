@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebGradu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1101e2397efff2b7e60f2213e0adf1068528f61e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+352d5fd3bac05ded5fe1ae5f8e1b3b69c055b6ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebGradu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebGradu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

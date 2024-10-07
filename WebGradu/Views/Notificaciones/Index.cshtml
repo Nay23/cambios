@@ -1,9 +1,5 @@
 ﻿@model IEnumerable<WebGradu.Models.Stock>
 
-@{
-    ViewData["Title"] = "Notificaciones de Stock Mínimo";
-}
-
 <div class="container mt-5">
     <h1 class="text-center">Productos con Stock Bajo</h1>
 
@@ -18,7 +14,7 @@
                             <h5 class="mb-0">@stock.Producto.Nombre</h5>
                         </div>
                         <div class="card-body text-center">
-                            <!-- Muestra la imagen del producto con tamaño ajustado -->
+                            <!-- Muestra la imagen del producto con la URL segura de Cloudinary -->
                             <img src="@stock.Producto.Foto" alt="@stock.Producto.Nombre" class="img-fluid mb-3" style="max-height: 150px; width: auto;" />
 
                             <p><strong>Código:</strong> @stock.Producto.Codigo_Producto</p>
