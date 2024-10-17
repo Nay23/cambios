@@ -1,0 +1,46 @@
+﻿@model List<WebGradu.Models.ProductoMasVendidoViewModel>
+
+<center><h2>Productos Más Vendidos</h2>
+  
+
+<canvas id="productosMasVendidosChart" width="400" height="200"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var ctx = document.getElementById('productosMasVendidosChart').getContext('2d');
+
+    // Obtener datos para el gráfico
+    var productos = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(
+        Model.Select(p => p.NombreProducto + " (" + p.CodigoProducto + ") - Vendidos: " + p.TotalVendidos).ToList()
+        ));
+    var totalVendidos = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(p => p.TotalVendidos).ToList()));
+
+    // Generar colores aleatorios para cada barra
+    var colors = [];
+    for (var i = 0; i < productos.length; i++) {
+        colors.push('rgba(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ', 0.6)');
+    }
+
+    // Crear el gráfico
+    var productosMasVendidosChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: productos, // Etiquetas de productos con código y cantidad vendida
+            datasets: [{
+                label: 'Total Vendidos',
+                data: totalVendidos, // Datos de cantidades vendidas
+                backgroundColor: colors, // Colores aleatorios para las barras
+                borderColor: colors.map(color => color.replace('0.6', '1')), // Colores más opacos para los bordes
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true // Iniciar el eje Y en cero
+                }
+            }
+        }
+    });
+</script>
+

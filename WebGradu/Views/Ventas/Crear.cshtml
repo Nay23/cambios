@@ -26,23 +26,23 @@
                     <br />
 
                     <div class="form-group text-center">
-                        <button type="button" id="btnAgregar" class="btn btn-primary">
+                        <button type="button" id="btnAgregar" class="btn btn-primary btn-lg">
                             <i class="bi bi-plus"></i> Agregar Otro
                         </button>
-                        <button type="submit" class="btn btn-success">Registrar Venta</button>
+                        <button type="submit" class="btn btn-success btn-lg">Registrar Venta</button>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <h3>Productos Agregados</h3>
-                    <table class="table table-hover">
+                    <table class="table table-hover" style="font-size: 1.1rem; width: 100%;">
                         <thead style="background-color: rgba(23, 162, 184, 0.5);">
                             <tr>
                                 <th>Código</th>
                                 <th>Precio Unitario</th>
                                 <th>Cantidad</th>
                                 <th>Subtotal</th>
-                                <th>Acciones</th> <!-- Nueva columna para acciones -->
+                                <th style="text-align: center;">Acciones</th> <!-- Alineación centrada para encabezado -->
                             </tr>
                         </thead>
                         <tbody id="productosAgregados">
@@ -86,17 +86,22 @@
                     var subtotal = (parseFloat(precio) * parseInt(cantidad)).toFixed(2);
                     $('#productosAgregados').append(
                         `<tr>
-                                    <td>${codigo}</td>
-                                    <td>${parseFloat(precio).toFixed(2)}</td>
-                                    <td>${cantidad}</td>
-                                    <td>${subtotal}</td>
-                                    <td style="text-align: center;">
-                                    <button type="button" class="btn btn-danger btn-sm btnEliminar" style="font-size: 0.6rem; padding: 0.2rem 0.2rem;">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                    </td>
+                            <td>${codigo}</td>
+                            <td>${parseFloat(precio).toFixed(2)}</td>
+                            <td><input type="number" class="form-control cantidad" value="${cantidad}" disabled /></td>
+                            <td>${subtotal}</td>
+                            <td style="text-align: center;"> 
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <button type="button" class="btn btn-info btn-sm btnEditar" style="font-size: 1rem; padding: 0.5rem; margin-right: 0.5rem;">
+                                    <i class="bi bi-pencil"></i> 
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm btnEliminar" style="font-size: 1rem; padding: 0.5rem;">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
 
-                                    </tr>`
+                        </tr>`
                     );
 
                     listaDetalles.push({
@@ -106,12 +111,8 @@
                         SubTotal: parseFloat(subtotal)
                     });
 
-                    var total = listaDetalles.reduce((sum, item) => sum + item.SubTotal, 0).toFixed(2);
-                    $('#Total').val(total);
-
-                    $('#CodigoProducto').val('');
-                    $('#PrecioUnitario').val('');
-                    $('#Cantidad').val('');
+                    actualizarTotal();
+                    limpiarCampos();
                 } else {
                     alert("Por favor, completa todos los campos.");
                 }
@@ -119,18 +120,40 @@
 
             // Evento para eliminar producto de la tabla
             $(document).on('click', '.btnEliminar', function () {
-                var row = $(this).closest('tr'); // Obtener la fila
-                var codigo = row.find('td:eq(0)').text(); // Obtener el código del producto
-                var subtotal = parseFloat(row.find('td:eq(3)').text());
+                $(this).closest('tr').remove();
+                actualizarListaDetalles();
+                actualizarTotal();
+            });
 
-                // Eliminar la fila de la tabla
-                row.remove();
+            // Evento para editar cantidad
+            $(document).on('click', '.btnEditar', function () {
+                var row = $(this).closest('tr');
+                var cantidadInput = row.find('.cantidad');
 
-                // Actualizar listaDetalles y total
-                listaDetalles = listaDetalles.filter(item => item.CodigoProducto !== codigo);
+                if (cantidadInput.prop('disabled')) {
+                    // Cambiar el texto del botón a "Guardar"
+                    $(this).html('<i class="fa-regular fa-floppy-disk"></i>'); // Cambiar el icono a "Guardar"
+                    cantidadInput.prop('disabled', false).focus();
+                } else {
+                    // Actualizar el subtotal
+                    var cantidad = cantidadInput.val();
+                    var precio = parseFloat(row.find('td:eq(1)').text());
+                    var subtotal = (precio * cantidad).toFixed(2);
+                    row.find('td:eq(3)').text(subtotal);
 
-                var total = listaDetalles.reduce((sum, item) => sum + item.SubTotal, 0).toFixed(2);
-                $('#Total').val(total);
+                    // Actualizar listaDetalles
+                    actualizarListaDetalles();
+                    actualizarTotal();
+                    cantidadInput.prop('disabled', true);
+                    $(this).html('<i class="bi bi-pencil"></i> '); // Cambiar de nuevo a "Editar"
+                }
+            });
+
+            // Deshabilitar el envío del formulario al presionar "Enter"
+            $('form').on('keypress', function (e) {
+                if (e.which === 13) {
+                    e.preventDefault();
+                }
             });
 
             $('form').on('submit', function () {
@@ -142,18 +165,62 @@
                 $('#detalles').val(JSON.stringify(listaDetalles));
             });
 
+            function actualizarTotal() {
+                var total = listaDetalles.reduce((sum, item) => sum + item.SubTotal, 0).toFixed(2);
+                $('#Total').val(total);
+            }
+
+            function limpiarCampos() {
+                $('#CodigoProducto').val('');
+                $('#PrecioUnitario').val('');
+                $('#Cantidad').val('');
+            }
+
+            function actualizarListaDetalles() {
+                listaDetalles = [];
+                $('#productosAgregados tr').each(function () {
+                    var codigo = $(this).find('td:eq(0)').text();
+                    var precio = parseFloat($(this).find('td:eq(1)').text());
+                    var cantidad = parseInt($(this).find('.cantidad').val());
+                    var subtotal = parseFloat($(this).find('td:eq(3)').text());
+                    
+                    listaDetalles.push({
+                        CodigoProducto: codigo,
+                        PrecioUnitario: precio,
+                        Cantidad: cantidad,
+                        SubTotal: subtotal
+                    });
+                });
+            }
+
             // Mostrar la alerta si TempData["VentaCreada"] está presente
         @if (TempData["VentaCreada"] != null)
-        {
-            <text>
+{
+         <text>
+                $(function () {
                     Swal.fire({
                         title: 'Venta Creada',
                         text: '@TempData["VentaCreada"]',
                         icon: 'success',
                         confirmButtonText: 'OK'
                     });
+                });
             </text>
         }
+        else if (TempData["Error"] != null)
+        {
+            <text>
+                $(function () {
+                    Swal.fire({
+                        title: 'No se registró la Venta',
+                        text: '@TempData["Error"]',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
                 });
+            </text>
+        }
+
+        });
     </script>
 }

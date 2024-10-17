@@ -20,6 +20,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 
 
 
+
+
+
 // Configurar Cloudinary desde appsettings.json
 var cloudinaryConfig = builder.Configuration.GetSection("Cloudinary");
 var cloudinary = new Cloudinary(new Account(

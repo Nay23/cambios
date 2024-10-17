@@ -1,14 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
-namespace WebGradu.Models
+public class ApplicationUser : IdentityUser
 {
-
-    public class ApplicationUser : IdentityUser
-    {
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
-    }
+    public string? FirstName { get; set; }  // Permite valores nulos
+    public string? LastName { get; set; }   // Permite valores nulos
 }

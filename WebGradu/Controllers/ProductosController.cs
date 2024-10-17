@@ -90,7 +90,7 @@ namespace WebGradu.Controllers
             var producto = _context.Productos.FirstOrDefault(p => p.Codigo_Producto == codigo);
             if (producto != null)
             {
-                return Json(new { Precio = producto.Precio });
+                return Json(new { Precio = producto.Precio_Venta });
             }
             return Json(new { Precio = 0 }); // Retorna 0 si no se encuentra el producto
         }

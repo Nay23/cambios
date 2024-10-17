@@ -23,6 +23,7 @@ using WebGradu.Data; // Asegúrate de que este espacio de nombres sea correcto
 
 namespace WebGradu.Areas.Identity.Pages.Account
 {
+    [Authorize]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<IdentityUser> _signInManager;

@@ -1,7 +1,16 @@
 ﻿@model IEnumerable<WebGradu.Models.Stock>
 
+@{
+    
+    Layout = "~/Views/Shared/_Plantilla.cshtml";
+}
+
 <div class="container mt-5">
-    <h1 class="text-center">Productos con Stock Bajo</h1>
+    <h1 class="text-center">
+        <i class="fa-solid fa-triangle-exclamation fa-bounce" style="color: #FFD43B;"></i>
+        Productos con Stock Bajo
+    </h1>
+    <br />
 
     <div class="row">
         @foreach (var stock in Model)

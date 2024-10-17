@@ -4,7 +4,8 @@
 }
 @if (User.Identity.IsAuthenticated && TempData["StockBajo"] != null)
 {
-    <div class="alert alert-danger alert-dismissible fade show d-flex flex-column align-items-start" role="alert" style="width: 500px; padding: 1rem; font-size: 1.25rem;">
+    <div class="alert alert-danger alert-dismissible fade show d-flex flex-column align-items-start" role="alert"
+         style="position: absolute; top: 80px; left: 0; width: 500px; padding: 1rem; font-size: 1.25rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
         <div class="d-flex align-items-center">
             <i class="bi bi-bell-fill" style="font-size: 1.75rem; color: red; margin-right: 10px;"></i> <!-- Ícono de campanita -->
             <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">@TempData["StockBajo"]</span>
@@ -28,15 +29,17 @@
     </script>
 }
 
-<div style="margin-top: 20px; display: flex; justify-content: center;">
+<div style="margin-top: 180px; display: flex; justify-content: center;">
+    <!-- Aumentar el margen superior -->
     <img src="~/images/logito.png" class="animate__animated animate__zoomIn" height="300" width="300" />
 </div>
 
-    <div style="margin-top: 40px; text-align: center;">
-        <h1 style="font-family: 'Dreaming Outloud Pro', 'Cursive'; font-style: italic; color: #4682B4;">
-            SOMOS SUEÑOS, SOMOS PERSEVERANCIA, SOMOS AMOR<br>"SOMOS UN MUNDO DE COLOR"
-        </h1>
-    </div>
+<div style="margin-top: 60px; text-align: center;">
+    
+    <h1 style="font-family: 'Dreaming Outloud Pro', 'Cursive'; font-style: italic; color: #4682B4;">
+        SOMOS SUEÑOS, SOMOS PERSEVERANCIA, SOMOS AMOR<br>"SOMOS UN MUNDO DE COLOR"
+    </h1>
 </div>
+
 
 
