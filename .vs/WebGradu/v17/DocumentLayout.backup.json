@@ -3,84 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\views\\reportes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\views\\reportes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\views\\stock\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\views\\stock\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\models\\productomasvendidoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\models\\productomasvendidoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\views\\shared\\_plantilla.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\views\\shared\\_plantilla.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\models\\detalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\models\\detalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\views\\ventas\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\views\\ventas\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\views\\stock\\index..cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\views\\stock\\index..cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\views\\productos\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\views\\productos\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\views\\catalogo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\views\\catalogo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\views\\caja\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\views\\caja\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\controllers\\cajacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\controllers\\cajacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\models\\caja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\models\\caja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\views\\home\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\views\\home\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|solutionrelative:webgradu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C0EBC735-2117-42F8-B657-4D8926C3684C}|WebGradu\\WebGradu.csproj|c:\\users\\jessica gonzalez\\source\\repos\\webgradu\\webgradu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,46 +58,58 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Productos\\Crear.cshtml",
+              "RelativeDocumentMoniker": "WebGradu\\Views\\Productos\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Productos\\Crear.cshtml",
+              "RelativeToolTip": "WebGradu\\Views\\Productos\\Crear.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T11:47:37.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductoMasVendidoViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Models\\ProductoMasVendidoViewModel.cs",
-              "RelativeDocumentMoniker": "WebGradu\\Models\\ProductoMasVendidoViewModel.cs",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Models\\ProductoMasVendidoViewModel.cs",
-              "RelativeToolTip": "WebGradu\\Models\\ProductoMasVendidoViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T05:27:48.31Z",
+              "Title": "Index..cshtml",
+              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Stock\\Index..cshtml",
+              "RelativeDocumentMoniker": "WebGradu\\Views\\Stock\\Index..cshtml",
+              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Stock\\Index..cshtml",
+              "RelativeToolTip": "WebGradu\\Views\\Stock\\Index..cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T11:46:21.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Reportes\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebGradu\\Views\\Reportes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Reportes\\Index.cshtml",
-              "RelativeToolTip": "WebGradu\\Views\\Reportes\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Stock\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebGradu\\Views\\Stock\\Index.cshtml",
+              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Stock\\Index.cshtml",
+              "RelativeToolTip": "WebGradu\\Views\\Stock\\Index.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAAArwIMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T05:28:42.625Z",
+              "WhenOpened": "2024-10-18T02:05:25.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ReportesController.cs",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\ReportesController.cs",
-              "RelativeDocumentMoniker": "WebGradu\\Controllers\\ReportesController.cs",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\ReportesController.cs",
-              "RelativeToolTip": "WebGradu\\Controllers\\ReportesController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
+              "Title": "StockController.cs",
+              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\StockController.cs",
+              "RelativeDocumentMoniker": "WebGradu\\Controllers\\StockController.cs",
+              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\StockController.cs",
+              "RelativeToolTip": "WebGradu\\Controllers\\StockController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T05:28:14.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T01:23:46.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Stock.cs",
               "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Models\\Stock.cs",
               "RelativeDocumentMoniker": "WebGradu\\Models\\Stock.cs",
@@ -161,145 +117,11 @@
               "RelativeToolTip": "WebGradu\\Models\\Stock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T05:29:55.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T05:29:55.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DetalleVenta.cs",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Models\\DetalleVenta.cs",
-              "RelativeDocumentMoniker": "WebGradu\\Models\\DetalleVenta.cs",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Models\\DetalleVenta.cs",
-              "RelativeToolTip": "WebGradu\\Models\\DetalleVenta.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T05:24:38.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "WebGradu\\Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Models\\Producto.cs",
-              "RelativeToolTip": "WebGradu\\Models\\Producto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T04:30:42.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Plantilla.cshtml",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Shared\\_Plantilla.cshtml",
-              "RelativeDocumentMoniker": "WebGradu\\Views\\Shared\\_Plantilla.cshtml",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Shared\\_Plantilla.cshtml",
-              "RelativeToolTip": "WebGradu\\Views\\Shared\\_Plantilla.cshtml",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAAALIAAAB6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T18:11:04.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Catalogo\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebGradu\\Views\\Catalogo\\Index.cshtml",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Catalogo\\Index.cshtml",
-              "RelativeToolTip": "WebGradu\\Views\\Catalogo\\Index.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAmwCkAAAB2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T04:33:25.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Crear.cshtml",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Ventas\\Crear.cshtml",
-              "RelativeDocumentMoniker": "WebGradu\\Views\\Ventas\\Crear.cshtml",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Ventas\\Crear.cshtml",
-              "RelativeToolTip": "WebGradu\\Views\\Ventas\\Crear.cshtml",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAAAJUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T03:53:25.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CajaController.cs",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\CajaController.cs",
-              "RelativeDocumentMoniker": "WebGradu\\Controllers\\CajaController.cs",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\CajaController.cs",
-              "RelativeToolTip": "WebGradu\\Controllers\\CajaController.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAqwHYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T18:39:13.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Caja.cs",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Models\\Caja.cs",
-              "RelativeDocumentMoniker": "WebGradu\\Models\\Caja.cs",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Models\\Caja.cs",
-              "RelativeToolTip": "WebGradu\\Models\\Caja.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T18:38:49.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Crear.cshtml",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Productos\\Crear.cshtml",
-              "RelativeDocumentMoniker": "WebGradu\\Views\\Productos\\Crear.cshtml",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Productos\\Crear.cshtml",
-              "RelativeToolTip": "WebGradu\\Views\\Productos\\Crear.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAwAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T02:10:48.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Caja\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebGradu\\Views\\Caja\\Index.cshtml",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Caja\\Index.cshtml",
-              "RelativeToolTip": "WebGradu\\Views\\Caja\\Index.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T18:40:45.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VentasController.cs",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\VentasController.cs",
-              "RelativeDocumentMoniker": "WebGradu\\Controllers\\VentasController.cs",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\VentasController.cs",
-              "RelativeToolTip": "WebGradu\\Controllers\\VentasController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAqwIsAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T16:16:13.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Users\\Index.cshtml",
               "RelativeDocumentMoniker": "WebGradu\\Views\\Users\\Index.cshtml",
@@ -311,67 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "WebGradu\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "WebGradu\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T19:02:42.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "WebGradu\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "WebGradu\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T18:39:40.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Inicio.cshtml",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Home\\Inicio.cshtml",
-              "RelativeDocumentMoniker": "WebGradu\\Views\\Home\\Inicio.cshtml",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Home\\Inicio.cshtml",
-              "RelativeToolTip": "WebGradu\\Views\\Home\\Inicio.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T17:58:11.488Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebGradu\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebGradu\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAiwCQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T17:32:14.583Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebGradu\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebGradu\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T17:31:34.66Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\Program.cs",
               "RelativeDocumentMoniker": "WebGradu\\Program.cs",

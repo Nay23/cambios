@@ -113,7 +113,7 @@ namespace WebGradu.Controllers
 
             if (stock != null)
             {
-                // Si el stock actual es mayor a 0, se suma el nuevo stock al existente
+                // Suma el nuevo stock al existente
                 var stockActualizado = stock.StockActual + nuevoStock;
 
                 // Crea un nuevo registro de stock con el stock actualizado
@@ -132,10 +132,13 @@ namespace WebGradu.Controllers
                 _context.Stocks.Add(nuevoRegistro);
             }
 
-            _context.SaveChanges(); // Guarda los cambios en la base de datos
+            // Guarda los cambios en la base de datos
+            _context.SaveChanges();
+            TempData["ActualizacionExitosa"] = true; // Mensaje de éxito
 
-            return RedirectToAction("Index"); // Redirige a la vista de índice
+            return RedirectToAction("Index"); // Redirige a la vista adecuada
         }
+
 
 
 

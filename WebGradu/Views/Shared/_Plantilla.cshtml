@@ -171,16 +171,25 @@
                             <li>
                                 <a class="dropdown-item" asp-area="" asp-controller="Ventas" asp-action="Index">Historial </a>
                             </li>
-                            <li>
-                                <a class="dropdown-item" asp-area="" asp-controller="Caja" asp-action="Index">Cuadres </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" asp-area="" asp-controller="Reportes" asp-action="Index">Graficos </a>
-                            </li>
+                          
                         </ul>
                     </li>
+
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Rendimiento
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <li>
+                        <a class="dropdown-item" asp-area="" asp-controller="Caja" asp-action="Index">Cuadres </a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item" asp-area="" asp-controller="Reportes" asp-action="Index">Resultados </a>
+                    </li>
                 </ul>
+                </li>
+                               
             </div>
         </div>
 

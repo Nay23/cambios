@@ -1,12 +1,11 @@
-﻿@model IEnumerable<WebGradu.Models.Stock>
+﻿@model IEnumerable<WebGradu.Models.Producto>
 
 @{
     ViewData["Title"] = "Gestión de Stock";
     var productosSinStock = ViewData["ProductosSinStock"] as List<WebGradu.Models.Producto> ?? new List<WebGradu.Models.Producto>();
     var productosConStock = ViewData["ProductosConStock"] as List<WebGradu.Models.Producto> ?? new List<WebGradu.Models.Producto>();
-   
     var stockDictionary = ViewData["StockDictionary"] as Dictionary<int, WebGradu.Models.Stock> ?? new Dictionary<int, WebGradu.Models.Stock>();
-    Layout = "~/Views/Shared/_Plantilla.cshtml";
+  Layout = "~/Views/Shared/_Plantilla.cshtml";
 }
 
 <div class="container mt-5">
@@ -51,7 +50,7 @@
                         <p class="card-text"><strong>Código:</strong> @producto.Codigo_Producto</p>
 
                         <!-- Formulario para ingresar stock inicial -->
-                        <form method="post" action="@Url.Action("ActualizarStock", "Stock")" onsubmit="return validarStock(event, @producto.ProductoID)">
+                        <form method="post" action="@Url.Action("ActualizarStock", "Stock")" onsubmit="return validateStock(event, @producto.ProductoID)">
                             <input type="hidden" name="id" value="@producto.ProductoID" />
                             <label for="stock" class="form-label">Ingresar Stock Inicial</label>
                             <input type="number" class="form-control" name="nuevoStock" id="stock-@producto.ProductoID" min="0" value="0" required style="text-align: center; width: 100px;">
@@ -93,9 +92,8 @@
                                 <div id="reabastecimiento-section-@producto.ProductoID" style="display: none;">
                                     <label for="nuevoStock" class="form-label">Ingresar nuevo stock</label>
                                     <input type="number" class="form-control" name="nuevoStock" min="1" required placeholder="Ingrese cantidad" id="stock-reabastecimiento-@producto.ProductoID" style="text-align: center; width: 100px;">
-                                    <div id="error-reabastecimiento-@producto.ProductoID" class="text-danger" style="display: none;">El stock no puede ser 0.</div>
                                 </div>
-                                <button type="button" class="btn btn-primary mt-2" id="reabastecer-btn-@producto.ProductoID" onclick="btReabastecimiento(@producto.ProductoID)">
+                                <button type="button" class="btn btn-primary mt-2" id="reabastecer-btn-@producto.ProductoID" onclick="toggleReabastecimiento(@producto.ProductoID)">
                                     Reabastecimiento
                                 </button>
                             </form>
@@ -109,13 +107,13 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    function validarStock(event, productId) {
-        const stockInput = $(`#stock-${productId}`);
-        const errorDiv = $(`#error-${productId}`);
+    function validateStock(event, productId) {
+        const stockInput = $(#stock-${productId});
+        const errorDiv = $(#error-${productId});
         const stockValue = parseInt(stockInput.val());
-
+        
         // Ocultar la alerta antes de realizar la validación
-        errorDiv.hide();
+        errorDiv.hide(); 
 
         if (stockValue <= 0) {
             event.preventDefault(); // Evita que el formulario se envíe
@@ -129,26 +127,25 @@
         return true; // Permite el envío si la validación es correcta
     }
 
-    function btReabastecimiento(productId) {
-        const section = $(`#reabastecimiento-section-${productId}`);
-        const stockInput = $(`#stock-reabastecimiento-${productId}`);
-        const errorDiv = $(`#error-reabastecimiento-${productId}`);
-        const button = $(`#reabastecer-btn-${productId}`);
-
+    function toggleReabastecimiento(productId) {
+        const section = $(#reabastecimiento-section-${productId});
+        const stockInput = $(#stock-reabastecimiento-${productId});
+        const button = $(#reabastecer-btn-${productId});
+        
         if (section.is(':hidden')) {
             section.show();
             button.text("Guardar");
         } else {
             const inputValue = parseInt(stockInput.val());
-            
-            if (inputValue === 0) {
-                stockInput.addClass("is-invalid");
-                errorDiv.show(); // Muestra el mensaje de error
-                return; // No permite guardar con stock 0
+            if (inputValue > 0) {
+                $(#form-${productId}).submit(); // Envía el formulario
             } else {
-                stockInput.removeClass("is-invalid");
-                errorDiv.hide();
-                $(`#form-${productId}`).submit(); // Envía el formulario
+                // Muestra el mensaje de error en el campo
+                const errorDiv = $(#error-${productId});
+                errorDiv.show(); // Muestra el mensaje de error
+                stockInput.addClass("is-invalid"); // Agrega clase de Bootstrap para mostrar error en el campo
+                section.hide();
+                button.text("Reabastecimiento");
             }
         }
     }
