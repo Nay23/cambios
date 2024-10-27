@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
 using WebGradu.Data;
@@ -6,6 +7,7 @@ using WebGradu.Models;
 
 namespace WebGradu.Controllers
 {
+    [Authorize]
     public class CajaController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -18,12 +20,29 @@ namespace WebGradu.Controllers
         // Acción para mostrar el formulario y el historial de cuadres
         public IActionResult Index()
         {
-            var cuadres = _context.Caja
-                .Where(c => c.Estado == 1) // Solo registros con estado 0
+            // Obtén el UserName del usuario logueado
+            var userName = User.Identity.Name;
+            var isAdmin = User.IsInRole("Admin");
+
+            // Consulta los cuadres con estado 1
+            var cuadresQuery = _context.Caja
+                .Where(c => c.Estado == 1) // Solo registros con estado 1
+                .AsQueryable();
+
+            // Si el usuario no es Admin, filtra por su UserName
+            if (!isAdmin)
+            {
+                cuadresQuery = cuadresQuery.Where(c => c.UserName == userName); // Filtra por UserName
+            }
+
+            // Ordena los cuadres y convierte a lista
+            var cuadres = cuadresQuery
                 .OrderByDescending(c => c.FechaCuadre)
                 .ToList();
+
             return View(cuadres);
         }
+
 
         // Acción para verificar si ya existe un cuadre en las fechas seleccionadas
         [HttpPost]
@@ -134,7 +153,7 @@ namespace WebGradu.Controllers
             cuadre.DineroEfectivo = dineroEfectivo;
             _context.SaveChanges();
 
-            return Json(new { success = true, message = "Cuadre actualizado exitosamente." }); // Añadir un mensaje de éxito
+            return Json(new { success = true, message = "Cuadre actualizado exitosamente." }); 
         }
 
 

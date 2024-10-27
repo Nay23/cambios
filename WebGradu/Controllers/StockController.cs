@@ -4,10 +4,12 @@ using WebGradu.Models;
 using System.Linq;
 using System.Threading.Tasks;
 using CloudinaryDotNet;
-using WebGradu.Data; 
+using WebGradu.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebGradu.Controllers
 {
+    [Authorize]
     public class StockController : Controller
     {
         private readonly ApplicationDbContext _context;

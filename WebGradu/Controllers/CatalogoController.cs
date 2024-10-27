@@ -4,9 +4,11 @@ using WebGradu.Data;
 using WebGradu.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebGradu.Controllers
 {
+    [Authorize]
     public class CatalogoController : Controller
     {
         private readonly ApplicationDbContext _context;

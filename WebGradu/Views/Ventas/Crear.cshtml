@@ -1,5 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Crear Venta";
+
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "~/Views/Shared/_Plantilla.cshtml";
+    }
+    else if (User.IsInRole("Vendedor"))
+    {
+        Layout = "~/Views/Shared/_Vendedor.cshtml";
+    }
 }
 
 <h1>Crear Venta</h1>

@@ -11,9 +11,11 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using WebGradu.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebGradu.Controllers
 {
+    [Authorize]
     public class PDFController : Controller
     {
         private readonly ApplicationDbContext _context;

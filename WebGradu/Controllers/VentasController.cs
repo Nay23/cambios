@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
@@ -10,6 +11,7 @@ using WebGradu.Models;
 
 namespace WebGradu.Controllers
 {
+    [Authorize]
     public class VentasController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -24,14 +26,24 @@ namespace WebGradu.Controllers
         {
             try
             {
-              var ventas = await _context.Ventas
-             .Where(v => v.Estado == 1) // Filtra solo ventas activas
-             .Include(v => v.DetalleVentas)
-             .ThenInclude(d => d.Producto)
-             .ToListAsync();
+                // Obtener UserName del usuario logueado
+                var userName = User.Identity.Name; // Nombre del usuario logueado
+                var isAdmin = User.IsInRole("Admin");
 
+                // Consulta las ventas activas
+                var ventas = await _context.Ventas
+                    .Where(v => v.Estado == 1) // Filtra solo ventas activas
+                    .Include(v => v.DetalleVentas)
+                    .ThenInclude(d => d.Producto)
+                    .ToListAsync();
 
-                
+                // Si el usuario no es Admin, filtra por su UserName
+                if (!isAdmin)
+                {
+                    ventas = ventas.Where(v => v.UsuarioId == userName).ToList();
+                }
+
+                // Filtrar según el parámetro
                 if (filtro == "hoy")
                 {
                     ventas = ventas.Where(v => v.Fecha.Date == DateTime.Today).ToList();
@@ -57,11 +69,12 @@ namespace WebGradu.Controllers
             }
             catch (Exception ex)
             {
-                // Puedes registrar el error o mostrar un mensaje específico
-                
+      
                 return View(new List<Venta>()); // Retorna una lista vacía en caso de error
             }
         }
+
+
 
 
         public async Task<IActionResult> Detalles(int id)
@@ -76,7 +89,7 @@ namespace WebGradu.Controllers
                 return NotFound();
             }
 
-            return PartialView("_Detalles", venta); // Renderizar una vista parcial con los detalles
+            return PartialView("_Detalles", venta); 
         }
 
 

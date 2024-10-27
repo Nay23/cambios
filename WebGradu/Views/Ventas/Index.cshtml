@@ -2,8 +2,17 @@
 
 @{
     ViewData["Title"] = "Ventas Realizadas";
-    Layout = "~/Views/Shared/_Plantilla.cshtml";
+
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "~/Views/Shared/_Plantilla.cshtml";
+    }
+    else if (User.IsInRole("Vendedor"))
+    {
+        Layout = "~/Views/Shared/_Vendedor.cshtml";
+    }
 }
+
 
 <center>
     <h2 style="margin-top: 20px;">

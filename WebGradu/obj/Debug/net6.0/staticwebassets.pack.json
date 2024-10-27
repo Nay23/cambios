@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\images\\LOGOYAEL.jpg"
     },
     {
+      "Id": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\wwwroot\\images\\images.jpeg",
+      "PackagePath": "staticwebassets\\images\\images.jpeg"
+    },
+    {
       "Id": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\wwwroot\\images\\inicio.png",
       "PackagePath": "staticwebassets\\images\\inicio.png"
     },
@@ -35,6 +39,10 @@
     {
       "Id": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\wwwroot\\images\\logito.png",
       "PackagePath": "staticwebassets\\images\\logito.png"
+    },
+    {
+      "Id": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\wwwroot\\images\\mision.jpg",
+      "PackagePath": "staticwebassets\\images\\mision.jpg"
     },
     {
       "Id": "C:\\Users\\JESSICA GONZALEZ\\source\\repos\\WebGradu\\WebGradu\\wwwroot\\images\\user (2).png",

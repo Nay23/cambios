@@ -27,8 +27,6 @@ C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Micros
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.Build.dll
-C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.Build.Framework.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -60,7 +58,6 @@ C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Micros
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -92,7 +89,6 @@ C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\System
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\System.Runtime.Caching.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\System.Security.Permissions.dll
@@ -242,7 +238,6 @@ C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtim
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\alpine-arm\native\libe_sqlite3.so
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\alpine-arm64\native\libe_sqlite3.so
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -265,11 +260,7 @@ C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtim
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\obj\Debug\net6.0\staticwebassets\msbuild.WebGradu.Microsoft.AspNetCore.StaticWebAssets.props
@@ -318,3 +309,13 @@ C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\PagedL
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\PagedList.Mvc.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\X.PagedList.dll
 C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
+C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\System.Formats.Asn1.dll
+C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\JESSICA GONZALEZ\source\repos\WebGradu\WebGradu\bin\Debug\net6.0\System.Text.Json.dll

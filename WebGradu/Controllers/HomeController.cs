@@ -34,8 +34,8 @@ namespace WebGradu.Controllers
                     .Where(s => s.StockActual <= s.StockMinimo && s.StockActual > 0) // Filtrar productos con stock bajo
                     .ToList(); // Materializar la lista de productos con stock bajo
 
-                // Si hay productos con stock bajo, establece un mensaje en TempData
-                if (productosConStockBajo.Any())
+                // Si hay productos con stock bajo y el usuario es Admin, establece un mensaje en TempData
+                if (productosConStockBajo.Any() && User.IsInRole("Admin"))
                 {
                     TempData["StockBajo"] = "Atención: Hay productos con bajo stock.";
                 }
@@ -46,8 +46,8 @@ namespace WebGradu.Controllers
 
             // Si el usuario no está autenticado, redirigir a la vista Index del controlador Home
             return RedirectToAction("Inicio", "Home");
-
         }
+
         public IActionResult Privacy()
         {
             return View();

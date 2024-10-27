@@ -5,14 +5,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebGradu.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebGradu.Controllers
 {
-    public class ReportesController : Controller
+    [Authorize]
+    public class Graficos : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public ReportesController(ApplicationDbContext context)
+        public Graficos (ApplicationDbContext context)
         {
             _context = context;
         }
@@ -25,7 +27,7 @@ namespace WebGradu.Controllers
                 .Select(g => new ProductoMasVendidoViewModel
                 {
                     CodigoProducto = _context.Productos.Where(p => p.ProductoID == g.Key).Select(p => p.Codigo_Producto).FirstOrDefault(),
-                    NombreProducto = _context.Productos.Where(p => p.ProductoID == g.Key).Select(p => p.Nombre).FirstOrDefault(), // Asumiendo que tienes una propiedad Nombre en Producto
+                    NombreProducto = _context.Productos.Where(p => p.ProductoID == g.Key).Select(p => p.Nombre).FirstOrDefault(),
                     TotalVendidos = g.Sum(d => d.Cantidad)
                 })
                 .ToListAsync();
@@ -35,4 +37,3 @@ namespace WebGradu.Controllers
 
     }
 }
-

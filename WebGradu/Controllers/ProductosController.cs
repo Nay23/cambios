@@ -7,11 +7,13 @@ using WebGradu.Models;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 
 
 namespace WebGradu.Controllers
 {
+    [Authorize]
     public class ProductosController : Controller
     {
         private readonly ApplicationDbContext _context;
